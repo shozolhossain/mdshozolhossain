@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Project Name: Personal Portfolio Website
+Youtube: https://youtube.com/@devRasen
+Copyright: ©MdRasen -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/febico.png" />
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header section -->
+    <section id="header">
+      <div class="header-top">
+        <div class="logo">
+          <a href="#">Md. <span>Sh</span>ozol Hossain</a>
+        </div>
+        <div class="nav-menu">
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="bottom-left">
+          <h1 class="name">Md Shozol <span>Hossailn</span></h1>
+          <h3 class="my-profession">I' a m <span class="typing">Web Designer</span></h3>
+          <p class="short-desc">
+            I'm a web Designer with expertence for over 2 years. My expertise is to create and website design, prapgic
+            design, and many more...
+          </p>
+          <a href="assets/my-cv.pdf" target="_blank" class="btn-cv" download>Download CV</a>
+        </div>
+        <div class="bottom-right">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-skype"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about">
+      <div class="about-left">
+        <img src="assets/aboutimage.jpeg" alt="user-sideimg" />
+      </div>
+      <div class="about-right">
+        <div class="section-title">
+          <h2 class="sub-title">About Me</h2>
+          <h3 class="title">Web Developer</h3>
+        </div>
+        <p class="desc">
+          Web development, also known as website development, refers to the tasks associated with creating, building,
+          and maintaining websites and web applications that run online on a browser. It may, however, also include web
+          design, web programming, and database management. Web development is closely related to the job of designing
+          the features and functionality of apps (web design). The term development is usually reserved for the actual
+          construction of these things (that is to say, the programming of sites). The basic tools involved in web
+          development are programming languages called HTML (Hypertext Markup Language), CSS (Cascading Style Sheets),
+          and JavaScript. There are, however, a number of other programs used to “manage” or facilitate the construction
+          of sites that would otherwise have to be done “from scratch” by writing code. A number of content management
+          systems (CMS) fall into this category, including WordPress, Joomla!, Drupal, TYPO3, and Adobe Experience
+          Manager, among others.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="openTab('skills')">
+            Skills
+          </p>
+          <p class="tab-links" onclick="openTab('experience')">Experience</p>
+          <p class="tab-links" onclick="openTab('education')">Education</p>
+          <p class="tab-links" onclick="openTab('image')">Image</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Web Development</span><br />Web app development</li>
+            <li><span>Graphic Design</span><br />Designing Logo, Bannar, Thumbnail</li>
+            <li><span>Digital Marketing</span><br />Building business</li>
+            <li><span>Operating System</span><br />OS, ios, Windows</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2018-2020</span><br />Computer Operator at Kazi Nazeul Shiksha Niloy.</li>
+            <li>
+              <span>2019 - 2021</span><br />Trainer on Microsoft Office at Amitech Computer Learning.
+            </li>
+            <li>
+              <span>2022 - Current</span><br />Computer Operator at Udvash Academic & Admission Care.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2021 - Current</span><br />MSS in Political Science from Naogaon Govt. College, Naogaon.
+            </li>
+            <li>
+              <span>2018-2020</span><br />Degree in BSS from HSC from Santahar Govt. College, Bogura.
+            </li>
+            <li>
+              <span>2016-2017</span><br />HSC from Santahar Govt. College, Bogura.
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="image">
+          <ul>
+            <li>
+              <span>2023 - Current</span><br />MSc in CSE from American Int.
+              Univeristy
+            </li>
+            <li>
+              <span>2019-2023</span><br />BSc in CSE from American Int.
+              Univeristy
+            </li>
+            <li>
+              <span>2016-2018</span><br />HSC from Dhaka Imperial College
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Service section -->
+    <section id="service">
+      <div class="section-title">
+        <h2 class="sub-title">My Services</h2>
+        <h3 class="title">A brief of Offerting Services</h3>
+      </div>
+      <div class="services">
+        <div>
+          <i class="fa-brands fa-battle-net"></i>
+          <h2>Branding</h2>
+          <p>
+            Branding is about making consumers feel good about supporting a company and establishing an emotional
+            connection.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h2>Print Design</h2>
+          <p>
+            Print design refers to the processes involved in the reproduction of design onto physical materials.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-laptop"></i>
+          <h2>Wordpress</h2>
+          <p>
+            WordPress can be referred to as an online, open-source site-building tool based on PHP and MySQL programming
+            languages.
+          </p>
+        </div>
+        <div>
+          <i class="fa-brands fa-pix"></i>
+          <h2>Graphic Design</h2>
+          <p>
+            Graphic design is defined as “the art and practice of planning and projecting ideas and experiences with
+            visual and textual content.”
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Designe</h2>
+          <p>
+            I'm a web Designer with expertence for over 2 years. My expertise is to create and website design, prapgic
+            design, and many more...
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            A web developer is a programmer who develops World Wide Web applications using a client–server model.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile-android"></i>
+          <h2>App Designe</h2>
+          <p>
+            Mobile app design is the task of designing mobile applications, such as smartphones and other hand-held
+            devices.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile-android-alt"></i>
+          <h2>App Development</h2>
+          <p>
+            Mobile application development is the set of processes and procedures involved in writing software for
+            small, wireless computing devices.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio section -->
+    <section id="portfolio">
+      <div class="section-title">
+        <h2 class="sub-title">My Portfolio</h2>
+        <h3 class="title">Awesome Works</h3>
+        <div class="project-list">
+          <div class="project">
+            <img src="assets/portfolio/1.png" alt="project1" />
+            <div class="layer">
+              <h3>My First Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                enim hic excepturi eos, dolorum debitis.
+              </p>
+              <a href="https://shozolhossain.netlify.app/" target="_blank"><i class="fa fa-external-link"
+                  aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/portfolio/2.png" alt="project2" />
+            <div class="layer">
+              <h3>Project Title Here</h3>
+              <p>
+                Scouting was founded in 1914 in East Bengal, now Bangladesh, as part of the British Indian branch of The
+                Scout Association.
+              </p>
+              <a href="https://scoutbooks.netlify.app/" target="_blank"><i class="fa fa-external-link"
+                  aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="assets/portfolio/2.png" alt="project3" />
+            <div class="layer">
+              <h3>Project Title Here</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                enim hic excepturi eos, dolorum debitis.
+              </p>
+              <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section -->
+    <section id="testimonial">
+      <div class="section-title">
+        <h2 class="sub-title">Testimonial</h2>
+        <h3 class="title">People What Are Saying</h3>
+        <div class="testimonial-list">
+          <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              blanditiis suscipit sunt itaque nobis.
+            </p>
+            <div class="review-by">
+              <div class="img">
+                <img src="assets/project1.jpg" alt="testimonials-img-1" />
+              </div>
+              <div class="info">
+                <h3 class="name">John Doe</h3>
+                <h5 class="resignation">Web Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              blanditiis suscipit sunt itaque nobis.
+            </p>
+            <div class="review-by">
+              <div class="img">
+                <img src="assets/project2.jpg" alt="testimonials-img-2" />
+              </div>
+              <div class="info">
+                <h3 class="name">Natasha Malkova</h3>
+                <h5 class="resignation">Graphics Designer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="review">
+            <i class="fa-solid fa-quote-left"></i>
+            <p class="review-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              blanditiis suscipit sunt itaque nobis.
+            </p>
+            <div class="review-by">
+              <div class="img">
+                <img src="assets/project3.jpg" alt="testimonials-img-3" />
+              </div>
+              <div class="info">
+                <h3 class="name">Amy Koney</h3>
+                <h5 class="resignation">Digital Marketer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="section-title">
+        <h2 class="sub-title">Contact</h2>
+        <h3 class="title">Get in Touch</h3>
+      </div>
+      <div class="content">
+        <div class="contact-left">
+          <form action="">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit">
+              Send Message <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="vl"></div>
+        <div class="contact-right">
+          <div class="col address">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="info">
+              <h2 class="title">Address</h2>
+              <p>Wireless Road, Moghbazar Dhaka: 1217</p>
+            </div>
+          </div>
+          <div class="col phone">
+            <i class="fa-solid fa-phone"></i>
+            <div class="info">
+              <h2 class="title">Phone</h2>
+              <p>+880 1796-696628</p>
+            </div>
+          </div>
+          <div class="col phone">
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <div class="info">
+              <h2 class="title">WhatsApp</h2>
+              <p>+880 1796-696628</p>
+            </div>
+          </div>
+          <div class="col email">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="info">
+              <h2 class="title">Email</h2>
+              <p>rovershojol@gmail.com</p>
+            </div>
+          </div>
+          <div class="col website">
+            <i class="fa-solid fa-globe"></i>
+            <div class="info">
+              <h2 class="title">Website</h2>
+              <a href="https://scoutbooks.netlify.app/">shozolhossain.netlify.app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright ©️ RPortfolio | Made with
+          <i class="fa-solid fa-heart"></i> by
+          <a href="https://www.facebook.com/shozolhossain124">Md. Shozol Hossain</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
